@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.form-headline{
+    margin-top: 20px;
+}
+.notifications{
+    height: 30px;
+}
+.error-message{
+    color: red;
+    margin: 0;
+}
+.success-message{
+    color: green;
+    margin: 0;
+}
+.form-item{
+    padding: 5px;
+    display: flex;
+}
+label{
+    font-weight: bold;
+    margin-right: 20px;
+    width: 33%;
+}
+.add-client{
+    border: none;
+    margin-top: 20px;
+    margin-left: 2px;
+    background-color: lightgray;
+    border-radius: 5px;
+    width: 175px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        border: 1px solid gray;
+    }
+}
+
+.form-group--error{
+    & input{
+        border: 2px solid red;
+    }
+    & select{
+        border: 2px solid red;
+    }
+}
+.notice{
+    margin: 5px 0 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
